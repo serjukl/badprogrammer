@@ -1,0 +1,30 @@
+.container
+    min-height: 100vh
+    background-color: #292929
+    display: flex
+    justify-content: center
+    align-items: center
+
+.loginForm
+    box-shadow: 0 0 10px #1d1d1d 
+    padding: 20px
+    max-width: 600px
+    min-width: 320px
+    legend
+        display: flex
+        justify-content: center
+        svg
+            path
+                transition: 1s
+                animation-name: colorChange
+                animation-duration: 10s
+                animation-iteration-count: infinite
+
+@keyframes colorChange
+    0%
+        fill: black
+    50%
+        fill: #00ff2a
+    100%
+        fill: black
+        

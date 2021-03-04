@@ -1,15 +1,8 @@
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.sass'
 
-import React, { useEffect } from 'react'
-
 const Home = () => {
-
-    useEffect(() => {
-        console.log('works')
-        console.log('x')
-    }, [])
-  
     return (
         <div>
             <Head>

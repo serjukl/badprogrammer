@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../components/Button/Button'
+import styles from '../styles/Auth.module.sass'
 
 const auth = () => {
     const testClick = () => console.log('works click')
@@ -11,14 +12,22 @@ const auth = () => {
         </svg>
     )
     return (
-        <div>
-            <Button 
+        <div className={styles.container}>
+            <form className={styles.loginForm}>
+                <legend>
+                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25.502 7.31081L18.3588 0.167679L18.1912 0V0.167679V27.4658C18.6942 33.4017 20.6393 36.6547 25.9044 38.5327C31.1695 40.4107 37.1389 37.2918 38.9498 34.0724C40.7608 30.853 42.1022 26.0238 38.2456 20.8593C35.1603 16.7277 30.2305 16.3655 28.1513 16.7008V24.4141C31.6927 23.3141 33.137 25.9903 33.4164 27.4658C33.5506 28.7849 32.9872 31.5371 29.6604 31.9932C26.3337 32.4493 25.502 29.165 25.502 27.4658V7.31081Z" fill="black"/>
+                        <path d="M16.984 28.1701V20.7587C14.9718 23.3342 14.5358 26.7728 14.5694 28.1701L14.5694 54.9988L21.9473 47.6209V37.9625C18.1912 35.4138 17.0734 30.3723 16.984 28.1701Z" fill="black"/>
+                    </svg>
+                </legend>
+            </form>
+            {/* <Button 
                 btnName="Кнопка тест"
                 btnClickHandler={testClick}
                 btnBlurHandler={testBlur}
                 btnFocusHandler={testFocus}
                 isIcon={btnIcon}
-            />
+            /> */}
         </div>
     )
 }
