@@ -1,0 +1,27 @@
+@import '../../styles/vars.module'
+
+.navLink
+    margin-left: 10px
+    a
+        color: $main
+        padding: 5px 10px
+        line-height: 25px
+        transition: .3s
+    div
+        width: 0
+        background-color: $accent
+        height: 1px
+        margin: 0 auto
+        transition: .3s
+    &:hover
+        a
+            color: $accent
+        div
+            width: 100%
+
+
+.navLinkActive
+    a
+        color: $accent
+    div
+        width: 100%

@@ -1,0 +1,20 @@
+@import '../../styles/vars.module'
+
+.container
+    display: flex
+    align-items: center
+    strong
+        margin-left: 10px
+        font-weight: 400
+        color: $main
+        transition: .3s
+    svg
+        path
+            transition: .3s
+            fill: $main
+    &:hover
+        strong
+            color: $accent
+        svg
+            path
+                fill: $accent

@@ -1,0 +1,17 @@
+@import '../../styles/vars.module'
+
+.container
+    display: flex
+    align-items: center
+    justify-content: space-between 
+    width: 33px
+    cursor: pointer
+    margin-left: 25px
+    svg
+        path
+            fill: $main
+            transition: .3s
+    &:hover
+        svg
+            path
+                fill: $accent
